@@ -7,7 +7,7 @@ This is a six-department university campus network built in **GNS3** with
 area 0) routing. It was Project 2 of 3 for the Computer Networks Lab
 (CSE-3634) at IIUC, Autumn 2021. Project 1 used static routing; this project
 replaced it with OSPF so that routes are learned and repaired automatically.
-[Project 3](https://github.com/salehinafnan/campus-network-gns3) adds NAT and
+[Project 3](https://github.com/salehinafnan/campus-network-nat) adds NAT and
 DHCP for internet access.
 
 ![Topology](docs/topology.png)
@@ -144,7 +144,7 @@ exactly into the same `/27`:
 
 You can generate this table with
 `python3 tools/labcheck.py gns3/project2_0to255.gns3 --suggest-p2p 169.110.226.160/27`.
-[Project 3](https://github.com/salehinafnan/campus-network-gns3) uses this
+[Project 3](https://github.com/salehinafnan/campus-network-nat) uses this
 per-link scheme.
 
 ## Repository layout
