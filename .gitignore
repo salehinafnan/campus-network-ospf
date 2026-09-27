@@ -1,0 +1,11 @@
+# GNS3 / dynamips runtime artefacts
+*.log
+*.gns3.backup
+*.pcap
+**/project-files/captures/
+**/project-files/dynamips/*/c7200_i*
+**/project-files/dynamips/*.ghost
+**/project-files/tmp/
+
+__pycache__/
+.DS_Store
