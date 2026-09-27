@@ -147,23 +147,6 @@ You can generate this table with
 [Project 3](https://github.com/salehinafnan/campus-network-gns3) uses this
 per-link scheme.
 
-## Changes since submission
-
-- Flattened the repo. It had a doubly nested
-  `campus_network_OSPF-main/campus_network_OSPF-main/` folder. The layout is
-  now `gns3/`, `docs/` and `tools/`.
-- Removed **ELL-2**, a leftover router that had no configuration. It was
-  cabled to a shut-down ADM port and doesn't appear in the report.
-- Removed empty `router ospf 20` and `router ospf 40` processes from ADM, BBA
-  and CSE. They advertised nothing but still consumed router IDs; the ADM
-  screenshot above shows them.
-- Tightened two `network` statements that were wider than their interfaces.
-  EEE's `/24` wildcard became a `/25` to match its LAN. On ELL, I dropped a
-  `169.110.226.128/26` statement that duplicated the backbone statement.
-  Neither change affects which interfaces run OSPF.
-- Deleted empty `vpcs.log` files and added a `.gitignore` for GNS3 runtime
-  files.
-
 ## Repository layout
 
 ```
@@ -175,6 +158,6 @@ tools/labcheck.py                topology/config linter (+ test_labcheck.py)
 
 ## Team
 
-**Team 0to255:** Mahir Shadid (lead), Mushfiqus Salehin Afnan, Md. Abul
+**Team 0to255:** Mushfiqus Salehin Afnan, Mahir Shadid, Md. Abul
 Bashar, Mahafujul Alam and Pritom Saha. Supervised by Abdullahil Kafi, Dept.
 of CSE, IIUC.
